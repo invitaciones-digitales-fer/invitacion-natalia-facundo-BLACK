@@ -1,133 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Invitación • Camila & Tomás</title>
+    <title>Invitación • Natalia & Facundo</title>
 
     <!-- ----- Google Fonts románticas ----- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap"
         rel="stylesheet">
-
-
 
     <!-- Estilos propios -->
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Open Graph / WhatsApp preview -->
-    <meta property="og:title" content="¡Camila & Tomás se casan! 💍" />
+    <meta property="og:title" content="¡Natalia & Facundo se casan! 💍" />
     <meta property="og:description"
         content="Te invitamos a celebrar nuestro amor. Confirmá tu asistencia desde esta invitación digital." />
-    <meta property="og:image" content="https://TU-DOMINIO.com/assets/img/og-camila-tomas.jpg" />
-    <meta property="og:url" content="https://TU-DOMINIO.com/invitacion-camila-tomas/" />
+    <meta property="og:image" content="https://TU-DOMINIO.com/assets/img/og-natalia-facundo.jpg" />
+    <meta property="og:url" content="https://TU-DOMINIO.com/invitacion-black-natalia-facundo/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Favicon (opcional, lo generamos luego) -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <!-- Lottie Player CDN -->
+    <!-- Lottie Player CDN -->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
 
 
 </head>
+
 <body>
 
     <!-- ========= Overlay bienvenida ========= -->
     <div id="welcome" class="welcome__overlay">
         <div class="welcome__content">
-            <h1>Bienvenido</h1>
-            <p>Estás invitado a la boda de Camila & Tomás</p>
+            <h1>¡Qué alegría que estés acá!</h1>
+            <p>Vamos a casarnos y queremos compartirlo con vos.</p>
             <button id="enter-button" class="button button--outline button--hover">Entrar</button>
         </div>
     </div>
 
     <!-- ========= Música de fondo ========= -->
     <audio id="bg-music" loop>
-        <source src="assets/music/Canon in D (Pachelbel's Canon).mp3" type="audio/mpeg">
+        <source src="assets/music/Chopin - Nocturne op.9 No.2.mp3" type="audio/mpeg">
     </audio>
     <button id="music-toggle" class="music__icon-reproductor" aria-label="Música"><img id="music-icon"
             src="assets/icons/icono-musica_play.svg" alt="Play"></button>
 
     <!-- ========= HERO ========= -->
     <header class="hero">
-        <img src="assets/images/portada.jpg" alt="Camila y Tomás" class="hero__img">
+        <img src="assets/images/portada.jpg" alt="Natalia y Facundo" class="hero__img">
         <div class="hero__overlay">
-            <img src="assets/images/logo_personal.png" alt="Logo Camila y Tomás" class="hero__logo fade-zoom">
+            <img src="assets/images/logo_personal.png" alt="Logo Natalia y Facundo" class="hero__logo fade-zoom">
         </div>
         <a href="#frase" class="hero__scroll-down" aria-label="Bajar"></a>
     </header>
 
-    <!-- ========= FRASE ========= -->
-    <section class="frase" id="frase">
-        <div class="frase__container">
-            <img src="assets/icons/heart-internet_26694.png" alt="icon icono-corazon" class="frase__img fade-zoom" width="10" >
-
-            <div class="frase__text fade-down">
-                <h4>Nuestro Momento Ha Llegado</h4>
-                <p>"Hay amores que parecen estar escritos en las estrellas."</p>
-                <br>
-                <p><i>William Shakespeare</i></p>
-            </div>
-        </div>
-
-    </section>
-
     <!-- ========= COUNTDOWN ========= -->
-    <section id="countdown" class="section">
+    <section id="countdown" class="section countdown__container">
 
         <div id="clock" class="countdown__clock"></div>
-        <img src="assets/icons/wedding-rings.png" alt="icono-boda" class="countdown__img  fade-zoom">
+        <dotlottie-player src="https://lottie.host/d2cab2aa-64fa-4306-8b94-51d38c2db4a2/fcW76X2Njk.lottie"
+            background="transparent" speed="0.7"  loop autoplay class="lottie-icon--min"></dotlottie-player>
         <div class="frase__text">
-            <h4 class="fade-zoom">CUENTA REGRESIVA</h4>
+            <h4 class="fade-zoom">La cuenta regresiva comenzó</h4>
         </div>
 
     </section>
 
     <!-- ========= CEREMONIA & FIESTA ========= -->
     <section id="fiesta" class="section section__ceremonia">
+        <!-- 1️⃣ Celebración religiosa -->
         <div class="fiesta__inner fade-down">
+            <!-- Ícono iglesia animado -->
+            <dotlottie-player src="https://lottie.host/96d1fbaa-7f7d-4e25-95c8-f7063ac6d9a2/lwchY0qpkk.lottie"
+                background="transparent" speed="1" class="lottie-icon" loop autoplay>
+            </dotlottie-player>
+
             <h3 class="section__title section__title--fiesta">Celebración Religiosa</h3>
             <p>
-                Sábado 20 de Septiembre – 17:00 hs<br>
+                Sábado 20 de septiembre – 17:00 hs<br>
                 Iglesia del Carmen | Palermo
             </p>
-            <a class="button button--primary button--hover pause-music" target="_blank" href="https://maps.app.goo.gl/kdgQZJ7jHJBeDgxV6">Cómo
-                llegar</a>
+            <a class="button button--primary button--hover pause-music" href="https://maps.app.goo.gl/kdgQZJ7jHJBeDgxV6"
+                target="_blank">Cómo llegar</a>
         </div>
+
+        <!-- 2️⃣ Fiesta de gala -->
         <div class="fiesta__inner fade-down">
+            <!-- Ícono copas/fiesta animado -->
+            <dotlottie-player src="https://lottie.host/8d329910-05a9-46c4-a19d-34142592a2e4/d9LbqsARJC.lottie"
+                background="transparent" speed="1" class="lottie-icon" loop autoplay>
+            </dotlottie-player>
+
             <h3 class="section__title section__title--fiesta">Fiesta de Gala</h3>
             <p>
-                Sábado 20 de Septiembre – 20:00 hs<br>
+                Sábado 20 de septiembre – 20:00 hs<br>
                 Salón Rosa | Palermo
             </p>
-            <a class="button button--primary button--hover pause-music" target="_blank" href="https://maps.app.goo.gl/bnKoFgJ8cQ3zs9Vm6">Cómo
-                llegar</a>
+            <a class="button button--primary button--hover pause-music" href="https://maps.app.goo.gl/bnKoFgJ8cQ3zs9Vm6"
+                target="_blank">Cómo llegar</a>
         </div>
     </section>
+
 
     <!-- ========= RSVP ========= -->
     <section id="rsvp" class="confirmar-asistencia">
         <div class="rsvp__container">
-            <h4 class="section__title section__title-rspv fade-zoom">Confirmá tu Asistencia</h4>
+            <h4 class="section__title section__title-rspv fade-zoom">¡Te esperamos!</h4>
             <div class="rspv__info fade-down">
-                <p>Tu presencia hará de este día un recuerdo inolvidable.</p>
+                <p>Sólo faltás vos para que este día sea perfecto.</p>
                 <a class="button button--primary button--hover pause-music" target="_blank"
                     href="https://forms.gle/rXmm24d7sacwsgb39">Confirmar asistencia</a>
             </div>
-            <img src="assets/icons/calendar.png" alt="icono-calendar" class="icono-img-primary calendar  fade-zoom">
+           <dotlottie-player
+  src="https://lottie.host/9aad2dbd-0f81-45b1-96fa-943ff4283d76/8xrn79HV2w.lottie"
+  background="transparent"
+  speed="1"
+  class="lottie-icon"
+  loop
+  autoplay
+></dotlottie-player>
             <div class="rspv__calendario fade-down">
                 <p>¡Agendá la fecha en tu calendario!</p>
                 <div class="rsvp__dropdown">
-                    <button id="btnCalendar" class="button button--primary calendar-button pause-music">Agendar evento</button>
+                    <button id="btnCalendar" class="button button--primary calendar-button pause-music">Agendar
+                        evento</button>
                     <ul id="calendarMenu" class="dropdown__menu">
                         <li>
                             <a href="https://calendar.google.com/calendar/render?...">
@@ -164,10 +168,17 @@
 
             </div>
             <br>
-            <img src="assets/icons/wedding-dress.png" alt="icono-dresscode" class="icono-img-primary dresscode  fade-zoom">
+           <dotlottie-player
+  src="https://lottie.host/eb36ce60-e25c-49f0-b018-e1a341aadddc/zME81cyOQ4.lottie"
+  background="transparent"
+  speed="0.8"
+  class="lottie-icon"
+  loop
+  autoplay
+></dotlottie-player>
             <div class="dresscode__container fade-down">
                 <h4 class="section__title-dresscode">DRESS CODE:</h4>
-                <p class="dresscode__info">Elegancia formal.
+                <p class="dresscode__info">Traje oscuro para ellos · Largo/Coctel para ellas
                     <br>
                     Al ser al aire libre, te sugerimos calzado cómodo y un abrigo liviano para la noche.
                 </p>
@@ -177,17 +188,26 @@
     <!-- ========= INSTAGRAM ========= -->
     <section class="instagram">
         <div class="instagram__container">
-            <img src="assets/icons/wedding-photos.png" alt="icono-instagram" class="icono-img  fade-zoom camera">
-            
+            <dotlottie-player
+  src="https://lottie.host/a1d27371-a316-4303-8aec-232bb1e2aea5/rUr9RSoAVj.lottie"
+  background="transparent"
+  speed="0.7"
+  class="lottie-icon"
+  loop
+  autoplay
+></dotlottie-player>
+
             <div class="instagram__text fade-down">
                 <h4>
-                    <span class="hashtag">@CamilayTomas</span>
+                    <span class="hashtag">#Nati❤️Facu</span>
                 </h4>
                 <p>¡Preparate para nuestro casamiento!
                     <br>
-                    Sumate a cada detalle de nuestra historia en Instagram y compartí tus fotos usando <span class="hashtag">#CamilaYTomás</span>
+                    Sumate a cada detalle de nuestra historia en Instagram y compartí tus fotos usando <span
+                        class="hashtag">#CamilaYTomás</span>
                 </p>
-                <a class="button button--primary button--hover pause-music" target="_blank" href="https://www.instagram.com/fernandopizarro__/">Ver en
+                <a class="button button--primary button--hover pause-music" target="_blank"
+                    href="https://www.instagram.com/fernandopizarro__/">Ver en
                     Instagram</a>
 
             </div>
@@ -197,7 +217,8 @@
     <!-- ========= GALERÍA ========= -->
     <section class="galeria section bg-light">
         <div class="galeria__contenedor hidden">
-            <h4 class="galeria__title  fade-zoom">NUESTRA HISTORIA EN IMÁGENES <br><img src="assets/icons/diary.png" alt="" class="diary"></h4>
+            <h4 class="galeria__title  fade-zoom">NUESTRA HISTORIA EN IMÁGENES <br><img src="assets/icons/diary.png"
+                    alt="" class="diary"></h4>
             <p class="galeria__text fade-down">Mil instantes que nos llevaron hasta aquí.</p>
             <div class="galeria__grid">
                 <button class="gallery__item" type="button"><img src="assets/images/1.jpg" alt="Foto 1"></button>
@@ -222,7 +243,14 @@
     <!-- ========= REGALOS ========= -->
     <section id="regalos" class="cbu">
         <div class="cbu__container">
-            <img src="assets/icons/gift.png" alt="icono-regalo" class="icono-img  fade-zoom gift">
+            <dotlottie-player
+  src="https://lottie.host/84fdc804-e8ec-4b4e-98df-1d82ded17566/3SVQSZ2OXw.lottie"
+  background="transparent"
+  speed="0.9"
+  class="lottie-icon--max-2"
+  loop
+  autoplay
+></dotlottie-player>
             <div class="cbu__text fade-down">
                 <p>
                     Tu cariño es nuestro mayor regalo.
@@ -248,7 +276,8 @@
             </ul>
             <span class="title__modal">Lista de Regalos</span>
             <ul>
-                <li><a href="https://novios.falabella.com/" target="_blank" class="pause-music">Falabella Novios</a></li>
+                <li><a href="https://novios.falabella.com/" target="_blank" class="pause-music">Falabella Novios</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -258,11 +287,11 @@
     <section id="playlist" class="playlist">
         <div class="playlist__card  fade-zoom">
             <h4 class="playlist__title">¡A BAILAR!</h4>
-            <p class="playlist__text">Queremos que la música sea el reflejo de nuestra alegría. 
-                <br>
-                ¡Sumá tu tema favorito!
+            <p class="playlist__text">Sugerí tu canción y armemos la pista juntos.
+
             </p>
-            <a class="button button--outline button--hover pause-music" target="_blank" href="https://forms.gle/fV4XXE9pPn51y9en8">Sugerir canción</a>
+            <a class="button button--outline button--hover pause-music" target="_blank"
+                href="https://forms.gle/fV4XXE9pPn51y9en8">Sugerir canción</a>
 
         </div>
     </section>
@@ -306,15 +335,18 @@
             <ul class="modal__list">
                 <li>
                     <strong>Transporte 1</strong><br>
-                    WhatsApp: 11-7777-8888<a href="https://transporte1.com" target="_blank" class="pause-music"><br>Web</a>
+                    WhatsApp: 11-7777-8888<a href="https://transporte1.com" target="_blank"
+                        class="pause-music"><br>Web</a>
                 </li>
                 <li>
                     <strong>Transporte 2</strong><br>
-                    WhatsApp: 11-9999-0000<a href="https://transporte2.com" target="_blank" class="pause-music"><br>Web</a>
+                    WhatsApp: 11-9999-0000<a href="https://transporte2.com" target="_blank"
+                        class="pause-music"><br>Web</a>
                 </li>
                 <li>
                     <strong>Transporte 3</strong><br>
-                    WhatsApp: 11-2222-3333<a href="https://transporte3.com" target="_blank" class="pause-music"><br>Web</a>
+                    WhatsApp: 11-2222-3333<a href="https://transporte3.com" target="_blank"
+                        class="pause-music"><br>Web</a>
                 </li>
             </ul>
         </div>
@@ -325,14 +357,14 @@
     <section id="gracias" class="section__gracias">
         <div id="glitter-container" class="gracias__glitter-container">
             <p class="section__title section__title--gracias fade-zoom">
-                ♥
-                <br>
-                Gracias por ser parte de este capítulo tan especial de nuestras vidas.
+
+                Gracias por acompañarnos en este gran día ♥
             </p>
         </div>
     </section>
 
-  <!-- ========== Scripts ========== -->
-  <script src="assets/js/script-classica.js"></script>
+    <!-- ========= Scripts ========= -->
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
