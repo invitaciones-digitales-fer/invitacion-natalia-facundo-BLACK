@@ -17,6 +17,7 @@
     --color-accent: #7a9a85c9;
     /* verde oliva desaturado */
     --color-overlay: rgba(0, 0, 0, 0.6);
+    --color-violet: #E6E6FA;
 }
 
 /* --------- Reset --------- */
@@ -112,10 +113,10 @@ p {
 .welcome__content {
     text-align: center;
     padding: 2rem;
-    background: var(--color-gray);
+    background: var(--color-violet);
     backdrop-filter: blur(8px);
     border-radius: 1rem;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(56, 56, 56, 0.2);
     max-width: 90vw;
     width: 100%;
     box-sizing: border-box;
@@ -124,7 +125,8 @@ p {
 #welcome h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: var(--color-white);
+    color: var(--color-black);
+    opacity: 0.6;
 }
 
 #welcome button {
@@ -352,7 +354,7 @@ p {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    
+
 }
 
 .hero__img {
@@ -468,7 +470,7 @@ p {
 
 /* --------- Countdown --------- */
 #clock {
-      display: grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     justify-items: center;
@@ -481,7 +483,7 @@ p {
     border-radius: 50%;
     background-color: var(--color-background);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-    border: 1px solid #ddd;
+    border: 1px solid #00000024;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -496,7 +498,7 @@ p {
 #clock div strong {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #333;
+    color: #33333394;
     line-height: 1;
 }
 
@@ -509,8 +511,9 @@ p {
     letter-spacing: 0.5px;
 }
 
-.countdown__container{
+.countdown__container {
     padding: 40px;
+    padding-bottom: 0;
 }
 
 
@@ -528,12 +531,13 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+
 }
 
 .rspv__info,
 .dresscode__info {
     text-align: center;
+    padding-inline: 15px;
 }
 
 .dresscode {
@@ -1011,31 +1015,40 @@ p {
 
 /* --- helper para iconos lottie dentro de .fiesta__inner --- */
 .lottie-icon {
-    display:block;          /* lo convierte en “bloque” */
-    margin:0 auto 22px;     /* lo centra y deja un espacio abajo */
-    width:120px;             /* mismo ancho/alto – podés ajustar */
-    height:120px;
+    display: block;
+    /* lo convierte en “bloque” */
+    margin: 0 auto 22px;
+    /* lo centra y deja un espacio abajo */
+    width: 120px;
+    /* mismo ancho/alto – podés ajustar */
+    height: 120px;
 }
 
 .lottie-icon--max {
-    display:block;          /* lo convierte en “bloque” */
-    margin:40px auto 22px;     /* lo centra y deja un espacio abajo */
-    width:160px;             /* mismo ancho/alto – podés ajustar */
-    height:160px;
+    display: block;
+    /* lo convierte en “bloque” */
+    margin: 40px auto 22px;
+    /* lo centra y deja un espacio abajo */
+    width: 160px;
+    /* mismo ancho/alto – podés ajustar */
+    height: 160px;
 }
 
 .lottie-icon--max-2 {
-    display:block;          /* lo convierte en “bloque” */
-    margin:40px auto 22px;     /* lo centra y deja un espacio abajo */
-    width:250px;             /* mismo ancho/alto – podés ajustar */
-    height:250px;
+    display: block;
+    /* lo convierte en “bloque” */
+    margin: 40px auto 22px;
+    /* lo centra y deja un espacio abajo */
+    width: 250px;
+    /* mismo ancho/alto – podés ajustar */
+    height: 250px;
 }
 
 
 
 /* ==============MEDIA QUERIES============== */
 @media (min-width: 375px) {
-   
+
     #clock div {
         width: 72px;
         height: 72px;
@@ -1043,23 +1056,40 @@ p {
 }
 
 @media (min-width: 425px) {
-     #clock {
+    #clock {
         display: flex;
         justify-content: center;
         gap: 1.5rem;
         padding: 40px 0 0;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     #clock div {
-        width: 88px;
-        height: 88px;
+        width: 75px;
+        height: 75px;
     }
 
     #clock div span {
-        font-size: 1rem;
+        font-size: 0.7rem;
 
     }
+
+     .lottie-icon--min {
+         display: block;
+    /* lo convierte en “bloque” */
+    margin: 0 auto 22px;
+    /* lo centra y deja un espacio abajo */
+    width: 230px;
+    /* mismo ancho/alto – podés ajustar */
+    height: 230px;
+    margin-top: 30px;
+    }
+
+    .countdown__container {
+        padding-top: 0;
+    }
+    
+    
 }
 
 
@@ -1088,6 +1118,10 @@ p {
         /* mantiene forma cuadrada */
     }
 
+    .galeria__title {
+        font-size: 25px;
+    }
+
     #clock div {
         width: 102px;
         height: 102px;
@@ -1102,26 +1136,39 @@ p {
         margin-right: 25px;
     }
 
+    .playlist__card{
+        width: 400px;
+    }
+
     .fiesta__inner {
         padding: 0;
     }
 
 
     .instagram__text p {
-        width: 690px;
+        max-width: 100%;
     }
 
+    .section__title--fiesta,
     .playlist__card {
-        width: 586px;
+        max-width: 100%;
     }
 
     .modal__dialog {
         width: 50%;
     }
 
-    .section__title--fiesta {
-        width: 420px;
+    .lottie-icon--min {
+         display: block;
+    /* lo convierte en “bloque” */
+    margin: 0 auto 22px;
+    /* lo centra y deja un espacio abajo */
+    width: 250px;
+    /* mismo ancho/alto – podés ajustar */
+    height: 250px;
     }
+
+
 }
 
 
@@ -1146,7 +1193,7 @@ p {
 
     .modal__dialog {
         width: 40%;
-        
+
 
     }
 
