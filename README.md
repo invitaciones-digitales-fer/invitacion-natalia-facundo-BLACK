@@ -1,59 +1,47 @@
-# 💍 Wedding Invitation – Camila & Tomás
+# Classic Wedding Invitation – Agus & Franco
 
-This is a fully custom digital wedding invitation designed and developed for the couple Camila & Tomás.
+This is a digital wedding invitation designed for the couple **Agus & Franco**. It belongs to the *"Classic"* service tier, offering a simple and elegant experience to share key event details with guests.
 
-## 📱 Live Demo
+## ✨ Features
+- Elegant welcome overlay with fade-out animation
+- Hero section with logo and scroll-down indicator
+- Ceremony & Reception details with location buttons
+- RSVP section with external form link
+- Gift section with modal for banking info
+- Final thank-you message
+- Responsive design and scroll-based animations
 
-👉 [Visit the Invitation](https://invitaciones-digitales-fer.github.io/invitacion-camila-tomas/) 
+## 🛠️ Built with
+- **HTML5**
+- **CSS3** (custom properties, animations, media queries)
+- **JavaScript** (for modal, scroll reveal, and welcome overlay)
 
-## 📸 Screenshot
+## 📱 Responsive Design
+Optimized for mobile-first, with enhancements for tablets and desktops.
 
-![Desktop Design Screenshot](/DESKTOP%20invitaciones-digitales-fer.github.io_invitacion-camila-tomas_.png)
-![mobile Design Screenshot](/MOBILE%20-%20invitaciones-digitales-fer.github.io_invitacion-camila-tomas_.png)
+## 📸 Preview
 
-## 🎨 Features
+![Preview of Agus & Franco invitation](/screenshot-tablet.png)
 
-- 🎉 Overlay welcome screen with fade-out effect
-- 🎵 Music player with animated toggle button
-- ⏳ Countdown to the big day
-- 📍 Ceremony and party sections with map links
-- 📆 Add-to-calendar dropdown menu (Google, Outlook, Apple, Yahoo)
-- ✅ RSVP via Google Form
-- 🧥 Dress code section
-- 📸 Photo gallery with zoom modal (desktop & mobile optimized)
-- 🎁 Gift section with modal for bank details and gift list
-- 🎶 Playlist suggestion via external form
-- 🛏️ Hotel & transport recommendations modal
-- 💗 Scroll-based animations (fade-in, zoom-in, slide-down)
-- 🌐 Responsive design, works on all screen sizes
+## 🔗 Live Site
+[Click here to view the invitation](https://tusitio.com/invitacion-agus-franco/)  
+*Replace with your actual GitHub Pages link once deployed.*
 
----
+## 📂 Folder Structure
 
-## 🛠️ Built With
-
-- **HTML5** – Semantic and accessible structure
-- **CSS3** – Custom animations, media queries, variables
-- **JavaScript** – Interactivity, modals, countdown, music control
-- **IntersectionObserver API** – Scroll animations
-- **GitHub Pages** – Deployment
-
----
-
-## 📂 Structure
-
-```plaintext
+├── assets
+│ ├── css
+│ │ └── classic.css
+│ ├── js
+│ │ └── script-classica.js
+│ ├── images
+│ └── icons
 ├── index.html
-├── assets/
-│   ├── css/style.css
-│   ├── js/script.js
-│   ├── images/
-│   ├── icons/
-│   ├── music/
-│   └── ics/
 
 
-## Author
 
-- GitHub – [@fernandopizarrodw](https://github.com/fernandopizarrodw)
-- Frontend Mentor – [@fernandopizarrodw](https://www.frontendmentor.io/profile/fernandopizarrodw)
-- LinkedIn – [Fernando Pizarro](https://www.linkedin.com/in/fernandopizarro-dev/)
+## 📌 Notes
+This invitation is part of a series of digital templates offered as professional services. For more information or to request a custom design, feel free to reach out.
+
+---
+
